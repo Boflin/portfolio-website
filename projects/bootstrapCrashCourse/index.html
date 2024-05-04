@@ -11,12 +11,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles.css">
+  <!-- 
+    Bootstrap Icons
+    https://icons.getbootstrap.com/
+  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   
+  <!-- Bootstrap import -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
   <title>Net Ninja Pro - the Book</title>
   <style>
     section{
@@ -32,7 +35,8 @@
     <div class="container-xxl">
       <a href="#intro" class="navbar-brand">
         <span class="fw-bold text-secondary">
-          Net Ninja Pro - the book
+         <i class="bi bi-book-half"></i>
+          Net Ninja Pro - the book 
         </span>
       </a>
       <!--  toggle button for mobile nav -->
@@ -81,7 +85,10 @@
           <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
         </div>
         <div class="col-md-5 text-center d-none d-md-block">
-          <img class="img-fluid" src="./assets/images/ebook-cover.jpg" alt="the cover of the ebook">
+          <!-- toolTip -->
+          <span class="tt" data-bs-placement="bottom" title="Your eBook name goes here!">
+            <img class="img-fluid" src="./assets/images/ebook-cover.jpg" alt="the cover of the ebook">
+          </span>
         </div>
       </div>
     </div>
@@ -152,7 +159,8 @@
           <img src="./assets/images/ebook-cover2.png" class="img-fluid" alt="eBook">
         </div>
 
-        <!-- accordion start-->
+        <div class="col-lg-6">
+          <!-- accordion start-->
         <div class="accordion" id="chapters">
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading-1">
@@ -234,12 +242,203 @@
           </div>
 
         </div><!--.accordion -->
+
+
+        </div>
+        
       </div><!--.row -->
     </div>
   </section>
   
+  <!-- Reviews list -->
+  <section id="reviews" class="bg-white">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2>
+          <span class="text-primary">
+            <i class="bi bi-stars"></i>
+          </span>
+          Book Reviews
+        </h2>
+        <p class="lead">What my students have said about this book...</p>
+      </div>
+
+      <div class="row justify-content-center my-3">
+        <div class="col-lg-8">
+          <div class="list-group">
+            <div class="list-group-item py-3">
+              <!-- <div class="pb-2 text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div> -->
+              <h5 class="mb-1">A must buy for every aspiring web dev </h5>
+              <p class="mb-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum et officiis deserunt voluptatum, maxime veritatis similique nobis amet labore placeat cupiditate sequi nam aperiam corrupti incidunt ratione minima, praesentium a.
+              </p>
+              <small>Review by Mylah</small>
+              
+              <span class="text-warning ms-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+
+            <div class="list-group-item py-3">
+              <!-- <div class="pb-2 text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div> -->
+              <h5 class="mb-1">Things finally clicked after purchasing this book! </h5>
+              <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis dignissimos quam, veniam ipsa saepe dolores accusantium assumenda blanditiis inventore earum totam recusandae eaque doloremque maxime, dolorum doloribus eius quaerat perspiciatis officia vel, adipisci nesciunt impedit? Voluptatem quis voluptas itaque sed!</p>
+              <small>Review by Jennifer</small>
+              <span class="text-warning ms-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </span>
+            </div>
+
+            <div class="list-group-item py-3">
+              <!-- <div class="pb-2 text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div> -->
+              <h5 class="mb-1">Great for beginners and advanced students alike! So worth it!</h5>
+              <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere adipisci ipsum vitae dicta perspiciatis quia consectetur ipsam culpa reprehenderit autem fuga dolores, exercitationem, eos dolorum odit velit nemo tenetur consequatur mollitia unde non sit nulla earum delectus. Ipsum, eius aliquid.</p>
+              <small>Review by Stacy</small>
+              <span class="text-warning ms-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </span>
+            </div>
+            
+            <div class="list-group-item py-3">
+<!--               
+              <div class="pb-2 text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div> -->
+              <h5 class="mb-1">A must buy for every aspiring web dev  </h5>
+              <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius veritatis ullam illo ratione numquam dolore, sunt error eligendi. Libero voluptates mollitia a ratione impedit quis ipsam nesciunt possimus, fugit recusandae?</p>
+              <small>Review by Nathan</small>
+              <span class="text-warning ms-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div><!--.row-->
+
+    </div><!--.container-lg-->
+  </section>
+
+  <!-- contact form -->
+  <!-- Topics added: form-control, form-label, form-select, input-group, input-group-text -->
+  <section id="contact">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2>Get in Touch</h2>
+        <p class="lead">Questions to ask? Fill out the form below to contact me directly...</p>
+      </div>
+
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-6">
+
+          <form>
+
+            <label for="email" class="form-label">Email address:</label>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-envelope-fill"></i>
+              </span>
+              <input type="email" class="form-control" id="email" placeholder="e.g. cory@example.com">
+              <!-- tooltip -->
+              <span class="input-group-text">
+                <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to!">
+                  <i class="bi bi-question-circle text-muted"></i>
+                </span>
+              </span>
+            </div>
+
+            <label for="name" class="form-label">Name:</label>
+            <div class="input-group mb-4">
+              <span class="input-group-text">
+                <i class="bi bi-person-fill"></i>
+              </span>
+              <input type="text" class="form-control" id="name" placeholder="e.g. Cory">
+              <!-- tooltip -->
+              <span class="input-group-text">
+                <span class="tt" data-bs-placement="bottom" title="enter your name!">
+                  <i class="bi bi-person-fill-exclamation text-muted"></i>
+                </span>
+              </span>
+            </div>
+
+            <label for="subject" class="form-label">What is your question about?</label>
+            <div class="input-group mb-4">
+              <span class="input-group-text">
+                <i class="bi bi-question-circle-fill"></i>
+              </span>
+              <select id="subject" class="form-select">
+                <option value="pricing" selected>Pricing Query</option>
+                <option value="content">Content Query</option>
+                <option value="other">Other Query</option>
+              </select>
+            </div>
+
+
+            <div class="form-floating mb-4 mt-5">
+              <textarea name="" id="query" class="form-control" style="height: 140px;"></textarea>
+              <label for="query">Your query...</label>
+            </div>
+
+            <div class="mb-4 text-center">
+              <button type="submit" class="btn btn-secondary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- get updates - modal trigger -->
+
 
   <!-- BootStrap and Popper imports -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script></body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+
+    // the code to find and place all .tt (toolTips) in a variable
+    const tooltips = document.querySelectorAll('.tt')
+    tooltips.forEach(t => {
+      new bootstrap.Tooltip(t) // for each tooltip found, create a new bootstrap.Tooltip
+    })
+
+  </script>
+
+</body>
 </html>
