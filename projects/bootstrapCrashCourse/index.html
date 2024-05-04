@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   
   <!-- Bootstrap import -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="../../css/main.min.css" rel="stylesheet">
 
   <title>Net Ninja Pro - the Book</title>
   <style>
@@ -83,6 +83,10 @@
           </h1>
           <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+          <!-- open sidebar / offcanvas -->
+          <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+            Explore my other books
+          </a>
         </div>
         <div class="col-md-5 text-center d-none d-md-block">
           <!-- toolTip -->
@@ -251,11 +255,11 @@
   </section>
   
   <!-- Reviews list -->
-  <section id="reviews" class="bg-white">
+  <section id="reviews" class="bg-altlight">
     <div class="container-lg">
       <div class="text-center">
         <h2>
-          <span class="text-primary">
+          <span class="text-altdark">
             <i class="bi bi-stars"></i>
           </span>
           Book Reviews
@@ -279,7 +283,7 @@
               </p>
               <small>Review by Mylah</small>
               
-              <span class="text-warning ms-2">
+              <span class="text-altdark ms-2">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -299,7 +303,7 @@
               <h5 class="mb-1">Things finally clicked after purchasing this book! </h5>
               <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis dignissimos quam, veniam ipsa saepe dolores accusantium assumenda blanditiis inventore earum totam recusandae eaque doloremque maxime, dolorum doloribus eius quaerat perspiciatis officia vel, adipisci nesciunt impedit? Voluptatem quis voluptas itaque sed!</p>
               <small>Review by Jennifer</small>
-              <span class="text-warning ms-2">
+              <span class="text-altdark ms-2">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -319,7 +323,7 @@
               <h5 class="mb-1">Great for beginners and advanced students alike! So worth it!</h5>
               <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere adipisci ipsum vitae dicta perspiciatis quia consectetur ipsam culpa reprehenderit autem fuga dolores, exercitationem, eos dolorum odit velit nemo tenetur consequatur mollitia unde non sit nulla earum delectus. Ipsum, eius aliquid.</p>
               <small>Review by Stacy</small>
-              <span class="text-warning ms-2">
+              <span class="text-altdark ms-2">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -340,7 +344,7 @@
               <h5 class="mb-1">A must buy for every aspiring web dev  </h5>
               <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius veritatis ullam illo ratione numquam dolore, sunt error eligendi. Libero voluptates mollitia a ratione impedit quis ipsam nesciunt possimus, fugit recusandae?</p>
               <small>Review by Nathan</small>
-              <span class="text-warning ms-2">
+              <span class="text-altdark ms-2">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -357,7 +361,6 @@
   </section>
 
   <!-- contact form -->
-  <!-- Topics added: form-control, form-label, form-select, input-group, input-group-text -->
   <section id="contact">
     <div class="container-lg">
       <div class="text-center">
@@ -426,7 +429,70 @@
   </section>
 
   <!-- get updates - modal trigger -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="text-center">
+        <h2>Stay in the loop</h2>
+        <p class="lead">Get the latest updates as they happen...</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <p class="text-muted my-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptate praesentium sint ipsam aspernatur earum quas corporis corrupti voluptatibus dolorum ipsa, impedit et modi quod. Harum porro, modi sit deserunt vel distinctio dolor deleniti esse velit commodi alias repudiandae pariatur perspiciatis rerum, voluptatum placeat magnam eaque. Earum fugiat animi quos.
+          </p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Register for Updates</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- the modal itself -->
+  <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-title">Get the latest updates</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, sint. Nostrum doloribus a velit, corporis nam ratione laboriosam dolore nisi porro consequuntur earum voluptates animi. Provident deleniti similique, illum necessitatibus quis odit ab eveniet harum voluptatibus molestiae, placeat, dolor beatae.</p>
+          <label for="modal-email" class="form-label">Your email address:</label>
+          <input type="text" class="form-control" id="modal-email" placeholder="e.g. cory@example.com">
+        </div>
+        <div class="modal-footer">
+          <div class="btn btn-danger">Submit</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- offcanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p class="lead">HTML and CSS For Dummies</p>
+      <img class="img-fluid" src="./assets/images/ebook-cover.jpg" alt="">
+      <p class="my-4">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi libero expedita qui consequuntur nihil id voluptates cumque pariatur ducimus porro non laudantium, molestias dolorum repellendus quasi rerum dolor molestiae ea.
+      </p>
+
+      <!-- dropdown -->
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">
+          Choose a book title
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+          <li><a class="dropdown-item" href="#">HTML and CSS For Dummies</a></li>
+          <li><a class="dropdown-item" href="#">Making your first Website</a></li>
+          <li><a class="dropdown-item" href="#">Creating an engaging Portfolio</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
 
   <!-- BootStrap and Popper imports -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
